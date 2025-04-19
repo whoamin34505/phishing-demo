@@ -26,6 +26,7 @@ ___
 3. **Клонируйте репозиторий**
 
    `git clone https://github.com/whoamin34505/phishing-demo`
+   
    `cd phishing-demo`
 
 ---
