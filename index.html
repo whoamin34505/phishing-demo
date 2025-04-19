@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Telegram Web</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Telegram Web</h1>
+    <p>Введите номер телефона:</p>
+    
+    <div class="phone-container">
+        <span>+7</span>
+        <input id="phone" type="tel" placeholder="(___) ___-__-__">
+    </div>
+    
+    <button id="next">Далее</button>
+    
+    <footer style="text-align: center; margin-top: 30px; font-size: 14px; color: gray;">Версия: 2.2.8</footer>
+
+    <script>
+    $(document).ready(function() {
+        $('#phone').mask('(999) 999-99-99', {
+            placeholder: '(___) ___-__-__'
+        });
+    });
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
